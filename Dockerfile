@@ -24,4 +24,4 @@ COPY . .
 EXPOSE $PORT
 
 # Start command
-CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD python -m uvicorn main:app --host 0.0.0.0 --port $PORT
